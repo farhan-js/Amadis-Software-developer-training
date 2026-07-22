@@ -18,6 +18,11 @@
     <p id="query">Hello </p>
 
     <h1 id="change">innerHTML tag changing of h3</h1>
+    <div id="inner" >
+        <p>Hello</p>
+        <p style="display:none">Welcome to</p>
+        <b>JavaScript</b>
+    </div>
 </body>
     <script>
         let content1=document.getElementsByClassName("demo1");
@@ -45,6 +50,10 @@
         let change1=document.getElementById("change");
         change1.innerHTML="<p>innerHTML tag changing from h3 to paragraph</p>"
         console.log(change1);
+
+        console.log(document.getElementById("inner").innerHTML);
+        console.log(document.getElementById("inner").innerText);
+        console.log(document.getElementById("inner").textContent);
     </script>
 </body>
 </html>
