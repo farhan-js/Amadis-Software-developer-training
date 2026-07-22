@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model Practice</title>
+</head>
+<body>
+    <h3>getElementsByClassName Example with innerHtml</h3>
+    <p class="demo1" id="demo"></p>
+    <hr>
+    <h3>getElementById Example with innerHtml</h3>
+    <p id="sample"></p>
+    <hr>
+    <h3>getElementsByTagName Example with innerHtml</h3>
+    <div></div>
+    <h3>querySelector Example with style</h3>
+    <p id="query">Hello </p>
+</body>
+    <script>
+        let content1=document.getElementsByClassName("demo1");
+        content1[0].innerHTML="Content modified";
+        console.log(content1)
+
+        let content2=document.getElementById("sample");
+        content2.innerHTML="Content modified";
+        console.log(content2)
+
+        let content3=document.getElementsByTagName("div");
+        content3[0].innerHTML="Content modified";
+        console.log(content3)
+
+        let content4=document.querySelector("#query");
+        content4.style.color="blue";
+        console.log(content4)
+
+        let content5=document.querySelectorAll("h3");
+        for(let i=0;i<content5.length;i++){
+        content5[i].style.color="red";
+        }
+        console.log(content5);
+    </script>
+</body>
+</html>
