@@ -16,6 +16,8 @@
     <div></div>
     <h3>querySelector Example with style</h3>
     <p id="query">Hello </p>
+
+    <h1 id="change">innerHTML tag changing of h3</h1>
 </body>
     <script>
         let content1=document.getElementsByClassName("demo1");
@@ -39,6 +41,10 @@
         content5[i].style.color="red";
         }
         console.log(content5);
+
+        let change1=document.getElementById("change");
+        change1.innerHTML="<p>innerHTML tag changing from h3 to paragraph</p>"
+        console.log(change1);
     </script>
 </body>
 </html>
