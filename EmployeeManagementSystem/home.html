@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Employee Management System</h1>
+
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h3>Total Employees</h3>
+                <p id="totalEmployee">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Active Employees</h3>
+                <p id="activeEmployee">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Inactive Employees</h3>
+                <p id="inactiveEmployee">0</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="top-bar">
+
+            <input type="text" id="search" placeholder="Search by Name or Employee ID">
+
+            <select id="filterStatus">
+                <option value="All">All Employees</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+
+            <select id="sortEmployee">
+                <option value="">Sort By</option>
+                <option value="name">Name (A-Z)</option>
+                <option value="id">Employee ID</option>
+            </select>
+
+            <button id="exportCSV">Export CSV</button>
+
+        </div>
+
+
+
+        <div class="form-container">
+
+            <h2>Add Employee</h2>
+
+            <form id="employeeForm">
+
+                <input type="text" id="empId" placeholder="Employee ID">
+
+                <input type="text" id="empName" placeholder="Employee Name">
+
+                <input type="email" id="email" placeholder="Email">
+
+                <input type="text" id="phone" placeholder="Phone Number">
+
+                <input type="text" id="department" placeholder="Department">
+
+                <input type="text" id="designation" placeholder="Designation">
+
+                <input type="number" id="salary" placeholder="Salary">
+
+                <select id="status">
+                    <option value="">Select Status</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                </select>
+
+                <button type="submit"> Save Employee </button>
+
+            </form>
+
+        </div>
+
+
+
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Department</th>
+                        <th>Designation</th>
+                        <th>Salary</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <h1 id="noresult"></h1>
+    <script src="script.js"></script>
+</body>
+</html>
