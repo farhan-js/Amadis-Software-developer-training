@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import Welcome from "./welcome";
 import UnAuthorized from "./unauthorizedUser";
+import EventExample from "./onClickExample";
 function Login() {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
@@ -22,6 +23,7 @@ function Login() {
   }
 
   return (
+    <div>
     <form onSubmit={handleSubmit}>
       <label htmlFor="userName">Enter name: </label>
       <input
@@ -43,6 +45,8 @@ function Login() {
       
       <button type="submit">Login</button>
     </form>
+    <EventExample/>
+    </div>
   );
 }
 
