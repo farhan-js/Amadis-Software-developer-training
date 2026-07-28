@@ -1,0 +1,10 @@
+
+.center{
+    width: 200px;
+    margin: 0 auto;
+}
+.center label{
+  display: inline-block   ;
+  margin-bottom: 10px;
+  width: 100px;
+}
