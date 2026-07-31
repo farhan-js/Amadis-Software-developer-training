@@ -34,3 +34,17 @@ LANGUAGE plpgsql;
 
 SELECT * FROM display_cars(2022);
 
+
+CREATE PROCEDURE change_year()
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    UPDATE cars
+    SET year = 2024;
+END;
+$$;
+
+CALL change_year();
+
+SELECT * FROM "Day 1".cars;
+
