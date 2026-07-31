@@ -1,0 +1,36 @@
+SELECT * FROM "Day 1".cars;
+
+INSERT INTO "Day 1".cars VALUES ('Audi', 'A4', 2022);
+INSERT INTO "Day 1".cars VALUES ('Mercedes-Benz', 'C-Class', 2023);
+INSERT INTO "Day 1".cars VALUES ('Porsche', '911 Carrera', 2024);
+INSERT INTO "Day 1".cars VALUES ('Tesla', 'Model 3', 2022);
+INSERT INTO "Day 1".cars VALUES ('Toyota', 'Camry', 2020);
+INSERT INTO "Day 1".cars VALUES ('Honda', 'Civic', 2023);
+INSERT INTO "Day 1".cars VALUES ('Ford', 'Mustang', 2021);
+INSERT INTO "Day 1".cars VALUES ('Hyundai', 'Ioniq 5', 2023);
+
+
+CREATE VIEW model_2022 AS SELECT brand, model, year FROM "Day 1".cars WHERE year = 2022;
+
+SELECT * FROM model_2022;
+
+SELECT * FROM "Day 1".cars;
+
+
+SELECT model FROM model_2022 WHERE model = 'A4';
+
+CREATE OR REPLACE FUNCTION display_cars(x INT) 
+RETURNS TABLE(
+	brand VARCHAR,
+	model VARCHAR
+)
+AS $$
+BEGIN
+RETURN QUERY SELECT c.brand, c.model FROM "Day 1".cars AS c WHERE year = x;
+END;
+$$
+LANGUAGE plpgsql;
+
+
+SELECT * FROM display_cars(2022);
+
