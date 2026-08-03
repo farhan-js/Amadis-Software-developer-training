@@ -1,0 +1,77 @@
+CREATE TABLE Customers(
+Id INT PRIMARY KEY,
+Name VARCHAR(50) NOT NULL,
+Phone INT NOT NULL,
+Address VARCHAR(50) NOT NULL
+);
+
+INSERT INTO Customers VALUES
+(1, 'Rahul Sharma', 987654321, 'Chennai'),
+(2, 'Priya Singh', 876543210, 'Bengaluru'),
+(3, 'Arjun Kumar', 765432109, 'Hyderabad'),
+(4, 'Sneha Patel', 654321098, 'Mumbai'),
+(5, 'Vikram Reddy', 543210987, 'Pune');
+
+SELECT * FROM Customers;
+
+CREATE SEQUENCE customer_seq;
+SELECT nextval('customer_seq');
+SELECT currval('customer_seq');
+
+SELECT setval('customer_seq',5);
+
+INSERT INTO Customers VALUES(
+nextval('customer_seq'),'Farhan',875497650,'Nagercoil'
+);
+
+
+DROP TABLE IF EXISTS Orders;
+DROP TABLE IF EXISTS Customers;
+
+
+
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY,
+    CustomerName VARCHAR(50) NOT NULL,
+    City VARCHAR(50) NOT NULL
+);
+
+INSERT INTO Customers VALUES
+(1, 'Farhan Sathik', 'Nagercoil'),
+(2, 'Rahul Sharma', 'Chennai'),
+(3, 'Priya Singh', 'Bengaluru');
+
+SELECT * FROM Customers;
+
+
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    ProductName VARCHAR(50) NOT NULL,
+    Amount DECIMAL(10,2) NOT NULL,
+    CustomerID INT,
+
+    CONSTRAINT fk_customer
+    FOREIGN KEY (CustomerID)
+    REFERENCES Customers(CustomerID)
+);
+
+INSERT INTO Orders VALUES
+(101, 'Laptop', 65000.00, 1),
+(102, 'Mouse', 1200.00, 1),
+(103, 'Keyboard', 2500.00, 2),
+(104, 'Monitor', 18000.00, 3);
+
+SELECT * FROM Orders;
+
+
+
+SELECT
+    c.CustomerID,
+    c.CustomerName,
+    o.OrderID,
+    o.ProductName,
+    o.Amount
+FROM Customers c
+JOIN Orders o
+ON c.CustomerID = o.CustomerID;
