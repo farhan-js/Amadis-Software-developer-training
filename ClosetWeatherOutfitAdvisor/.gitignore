@@ -23,7 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-
 components.json
 eslint.config.js
 index.html
