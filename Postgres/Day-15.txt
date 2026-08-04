@@ -1,0 +1,67 @@
+CREATE TABLE Employees(
+id SERIAL PRIMARY KEY,
+name VARCHAR(30) NOT NULL,
+department VARCHAR(30),
+salary INT
+);
+
+INSERT INTO Employees (name, department, salary) VALUES
+('Farhan', 'IT',25000),
+('Ajay', 'Sales',NULL),
+('Rahul', 'Marketing',35000),
+('Ram', 'Sales',100000),
+('Sam', 'IT',50000);
+
+SELECT * FROM Employees;
+
+SELECT COUNT(*) FROM Employees;
+
+SELECT COUNT(salary) FROM Employees;
+
+SELECT DISTINCT department FROM Employees;
+SELECT COUNT(DISTINCT department) FROM Employees;
+
+SELECT SUM(salary) AS TOTAL_SALARY FROM Employees;
+
+SELECT avg(salary) AS TOTAL_SALARY FROM Employees;
+
+SELECT min(salary) AS TOTAL_SALARY FROM Employees;
+
+SELECT max(salary) AS TOTAL_SALARY FROM Employees;
+
+SELECT ROUND(avg(salary),2) AS TOTAL_SALARY FROM Employees;
+
+SELECT min(name) FROM Employees;
+
+SELECT min(name) FROM Employees;
+
+select name ,COALESCE(salary,0) from employees;
+
+select name ,salary from employees;
+
+
+SELECT department, SUM(salary) FROM employees GROUP BY department;
+
+SELECT department, SUM(salary)
+FROM employees
+WHERE salary >= 35000
+GROUP BY department;
+
+SELECT department, COUNT(*) AS null_salary_count
+FROM employees
+WHERE salary IS NULL
+GROUP BY department;
+
+SELECT department, ROUND(AVG(salary),2) AS average_salary
+FROM employees
+GROUP BY department
+ORDER BY average_salary DESC;
+
+SELECT SUM(COALESCE(salary, 0)) AS total_salary
+FROM employees;
+
+
+SELECT department, COUNT(*)
+FROM employees
+GROUP BY 1;
+
