@@ -1,0 +1,91 @@
+CREATE TABLE student(
+std_id SERIAL PRIMARY KEY,
+name text NOT NULL,
+dept_id INT,
+FOREIGN KEY (dept_id) references department(dept_id)
+);
+
+CREATE TABLE department(
+dept_id SERIAL PRIMARY KEY,
+dept_name  text NOT NULL
+);
+ 
+CREATE TABLE marks(
+std_id INT,
+mark INT,
+FOREIGN KEY (std_id) references student(std_id)
+);
+
+insert into department(dept_name) values('CSE'),('IT'),('ECE'),('Mech');
+
+insert into student(name,dept_id) values('Farhan',2),('Ajay',2),('Sam',1),('Ram',4);
+insert into marks values(1,90),(2,80),(3,94)
+
+-- select s.std_id,s.name,d.dept_name from student s join department d on s.dept_id=d.dept_id where d.dept_name='IT';
+SElect * from student;
+select * from department;
+
+
+SELECT s.name, d.dept_name
+FROM student s
+INNER JOIN department d
+ON s.dept_id = d.dept_id;
+
+SELECT s.name, d.dept_name
+FROM student s
+LEFT JOIN department d
+ON s.dept_id = d.dept_id;
+
+SELECT d.dept_name, COUNT(s.std_id) AS total_students
+FROM department d
+LEFT JOIN student s
+ON d.dept_id = s.dept_id
+GROUP BY d.dept_name;
+
+SELECT d.dept_name, AVG(m.mark) AS average_mark
+FROM department d
+JOIN student s
+ON d.dept_id = s.dept_id
+JOIN marks m
+ON s.std_id = m.std_id
+GROUP BY d.dept_name;
+
+SELECT s.name, m.mark
+FROM student s
+LEFT JOIN marks m
+ON s.std_id = m.std_id
+WHERE m.mark IS NULL;
+
+SELECT name
+FROM student
+WHERE dept_id IN (
+    SELECT dept_id
+    FROM department
+    WHERE dept_name = 'IT'
+);
+
+SELECT name
+FROM student
+WHERE EXISTS (
+    SELECT 1
+    FROM marks m
+    WHERE m.std_id = student.std_id
+);
+
+SELECT dept_name
+FROM department
+UNION
+SELECT name
+FROM student;
+
+SELECT name
+FROM student
+EXCEPT
+SELECT s.name
+FROM student s
+JOIN marks m
+ON s.std_id = m.std_id;
+
+SELECT name
+FROM student
+CROSS JOIN department;
