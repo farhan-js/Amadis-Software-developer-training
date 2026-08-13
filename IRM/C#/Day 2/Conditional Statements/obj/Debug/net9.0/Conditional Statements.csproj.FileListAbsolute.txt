@@ -1,0 +1,15 @@
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\Conditional Statements.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\Conditional Statements.AssemblyInfoInputs.cache
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\Conditional Statements.AssemblyInfo.cs
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\Conditional Statements.csproj.CoreCompileInputs.cache
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\Conditional Statements.sourcelink.json
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\bin\Debug\net9.0\Conditional Statements.exe
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\bin\Debug\net9.0\Conditional Statements.deps.json
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\bin\Debug\net9.0\Conditional Statements.runtimeconfig.json
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\bin\Debug\net9.0\Conditional Statements.dll
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\bin\Debug\net9.0\Conditional Statements.pdb
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\Conditional Statements.dll
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\refint\Conditional Statements.dll
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\Conditional Statements.pdb
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\Conditional Statements.genruntimeconfig.cache
+D:\Amadis Software-developer-training\IRM\C#\Day 2\Conditional Statements\obj\Debug\net9.0\ref\Conditional Statements.dll
