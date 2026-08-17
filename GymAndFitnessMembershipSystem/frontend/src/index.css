@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+:root {
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color: #111827;
+    background: #f8fafc;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
+/* -------------------------------- */
+/* Scrollbar */
+/* -------------------------------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* -------------------------------- */
+/* Page helpers */
+/* -------------------------------- */
+
+.page-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+@media (max-width: 640px) {
+
+    .page-container {
+        padding: 16px;
+    }
+}
+
+/* -------------------------------- */
+/* Smooth UI transitions */
+/* -------------------------------- */
+
+a,
+button {
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+/* -------------------------------- */
+/* Card hover */
+/* -------------------------------- */
+
+.card-hover {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* -------------------------------- */
+/* Mobile table support */
+/* -------------------------------- */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* -------------------------------- */
+/* Focus accessibility */
+/* -------------------------------- */
+
+:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* -------------------------------- */
+/* Loading utility */
+/* -------------------------------- */
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}

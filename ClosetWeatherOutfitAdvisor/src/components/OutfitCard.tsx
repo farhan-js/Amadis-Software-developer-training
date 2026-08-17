@@ -60,8 +60,9 @@ export default function OutfitCard({
         </CardContent>
       </Card>
     );
+    
   }
-
+  console.log("Rendering");
   return (
     <Card>
       <CardHeader>
