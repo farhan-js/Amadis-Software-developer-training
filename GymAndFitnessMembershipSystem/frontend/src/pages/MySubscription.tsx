@@ -516,11 +516,11 @@ export default function MySubscription() {
                         </div>
 
 
-                        <Button
-                            className="w-full bg-blue-400 hover:bg-blue-700"
-                            onClick={handleRenew}
-                            disabled={renewing}
-                        >
+                   <Button
+    className="w-full bg-blue-600 text-white hover:bg-blue-700"
+    onClick={handleRenew}
+    disabled={renewing}
+>
                             {renewing
                                 ? "Renewing..."
                                 : "Renew Membership"}
@@ -533,7 +533,7 @@ export default function MySubscription() {
                         >
 
 <Button
-    className="w-full bg-indigo-400 text-white hover:bg-indigo-700"
+    className="w-full bg-indigo-600 text-white hover:bg-indigo-700"
 >
     View Other Plans
 </Button>

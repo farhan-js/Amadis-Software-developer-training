@@ -50,12 +50,12 @@ export default function PlanCard({
 
             <CardFooter>
 
-                <Button
-                    className="w-full"
-                    onClick={() => onSubscribe?.(id)}
-                >
-                    Subscribe
-                </Button>
+<Button
+  className="w-full bg-indigo-600 text-white font-semibold py-2.5 px-4 rounded-lg shadow-md hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 active:scale-95 transition-all duration-200"
+  onClick={() => onSubscribe?.(id)}
+>
+  Subscribe
+</Button>
 
             </CardFooter>
 
