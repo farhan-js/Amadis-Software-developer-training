@@ -1,0 +1,15 @@
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\bin\Debug\net9.0\AbstractClassExample.exe
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\bin\Debug\net9.0\AbstractClassExample.deps.json
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\bin\Debug\net9.0\AbstractClassExample.runtimeconfig.json
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\bin\Debug\net9.0\AbstractClassExample.dll
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\bin\Debug\net9.0\AbstractClassExample.pdb
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\AbstractClassExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\AbstractClassExample.AssemblyInfoInputs.cache
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\AbstractClassExample.AssemblyInfo.cs
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\AbstractClassExample.csproj.CoreCompileInputs.cache
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\AbstractClassExample.sourcelink.json
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\AbstractClassExample.dll
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\refint\AbstractClassExample.dll
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\AbstractClassExample.pdb
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\AbstractClassExample.genruntimeconfig.cache
+D:\Amadis Software-developer-training\IRM\C#\Day 6\AbstractClassExample\obj\Debug\net9.0\ref\AbstractClassExample.dll
